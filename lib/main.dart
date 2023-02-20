@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,29 +12,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 61, 216, 236),
+        backgroundColor: Color.fromARGB(255, 252, 249, 249),
         body: SafeArea(
             child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
-            Container(
-              height: 100.0,
-              width: double.infinity,
-              color: Colors.white,
-              child: Text('Container 1'),
+            CircleAvatar(
+              radius: 50.0,
+              backgroundImage: AssetImage('images/shubh.jpg'),
             ),
-            Container(
-              width: double.infinity,
-              height: 100,
-              color: Colors.blue,
-              child: Text('container 2'),
-            ),
-            (Container(
-              height: 100,
-              width: double.infinity,
-              color: Colors.red,
-              child: Text('container 3'),
-            )),
+            Text(
+              'SHUBH',
+              style: GoogleFonts.pacifico(),
+            )
           ],
         )),
       ),
