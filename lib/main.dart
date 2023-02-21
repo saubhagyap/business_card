@@ -22,8 +22,13 @@ class MyApp extends StatelessWidget {
             ),
             Text(
               'SHUBH',
-              style: GoogleFonts.pacifico(),
-            )
+              style: GoogleFonts.pacifico(letterSpacing: 3, fontSize: 20),
+            ),
+            Text('FLUTTER DEVELOPER',
+                style: GoogleFonts.sourceSansPro(
+                    fontSize: 30,
+                    color: Colors.teal[100],
+                    fontWeight: FontWeight.bold)),
           ],
         )),
       ),
