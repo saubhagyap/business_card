@@ -1,5 +1,3 @@
-import 'dart:js_util';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -36,7 +34,7 @@ class MyApp extends StatelessWidget {
             SizedBox(
               height: 20,
               width: 150,
-              child: Divider(color: Colors.black),
+              child: Divider(color: Colors.teal),
             ),
             Card(
                 margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
